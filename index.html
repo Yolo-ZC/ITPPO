@@ -1,145 +1,134 @@
 <!DOCTYPE html>
-<html lang="zh">
+<html lang="zh-CN">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>IT 外设产品介绍</title>
+  <title>IT 产品展示</title>
   <style>
     body {
-      font-family: "Segoe UI", Arial, sans-serif;
-      background: linear-gradient(135deg, #eef2f3, #dfe9f3);
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
       margin: 0;
-      padding: 0;
+      padding: 40px 20px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 40px;
       color: #333;
     }
-    header {
-      background: linear-gradient(90deg, #1e3a8a, #3b82f6);
-      color: white;
-      text-align: center;
-      padding: 2rem 1rem;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 2rem;
-      letter-spacing: 1px;
-    }
-    header p {
-      margin-top: 0.5rem;
-      font-size: 1.1rem;
-      opacity: 0.9;
-    }
-    .container {
-      max-width: 1100px;
-      margin: 30px auto;
-      padding: 1rem;
+
+    .grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-      gap: 20px;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 25px;
+      max-width: 1200px;
+      margin: 0 auto;
     }
+
     .card {
-      background: white;
-      border-radius: 16px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-      padding: 1.5rem;
+      background: #fff;
+      border-radius: 20px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+      padding: 20px;
       text-align: center;
-      transition: transform 0.25s ease, box-shadow 0.25s ease;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
     }
+
     .card:hover {
-      transform: translateY(-6px);
-      box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.12);
     }
-    .card img {
-      max-width: 150px;
+
+    .image-box {
+      width: 180px;
+      height: 180px;
       margin: 0 auto 15px;
-      display: block;
+      background: #fff;
+      border-radius: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid #eee;
+      overflow: hidden;
     }
-    .card h2 {
-      margin: 0 0 10px;
-      color: #1e3a8a;
+
+    .image-box img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
     }
-    .card p {
-      font-size: 0.95rem;
-      color: #555;
-      line-height: 1.5;
-    }
-    footer {
-      text-align: center;
-      font-size: 0.9rem;
-      color: #666;
-      margin: 40px 0 20px;
+
+    .card h3 {
+      font-size: 18px;
+      color: #222;
+      margin: 10px 0 0;
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>IT 外设产品介绍</h1>
-    <p>扫码了解常用办公外设</p>
-  </header>
-
-  <div class="container">
+  <h1>IT 产品展示</h1>
+  <div class="grid">
     <div class="card">
-      <img src="images/mouse.jpg" alt="有线鼠标">
-      <h2>有线鼠标</h2>
-      <p>稳定可靠，响应速度快，无需电池，适合日常办公使用。</p>
+      <div class="image-box">
+        <img src="images/mouse.png" alt="有线鼠标">
+      </div>
+      <h3>有线鼠标</h3>
     </div>
-
     <div class="card">
-      <img src="images/keyboard.jpg" alt="有线键盘">
-      <h2>有线键盘</h2>
-      <p>全尺寸布局，稳定可靠，适合长时间输入使用。</p>
+      <div class="image-box">
+        <img src="images/keyboard.png" alt="有线键盘">
+      </div>
+      <h3>有线键盘</h3>
     </div>
-
     <div class="card">
-      <img src="images/headset.jpg" alt="有线耳机">
-      <h2>有线耳机</h2>
-      <p>配备麦克风，适合会议与日常沟通，音质清晰。</p>
+      <div class="image-box">
+        <img src="images/headset.png" alt="有线耳机">
+      </div>
+      <h3>有线耳机</h3>
     </div>
-
     <div class="card">
-      <img src="images/charger.jpg" alt="Type-C 充电器">
-      <h2>Type-C 充电器</h2>
-      <p>支持快速充电，适配多种设备，安全可靠。</p>
+      <div class="image-box">
+        <img src="images/charger.png" alt="Type-C 充电器">
+      </div>
+      <h3>Type-C 充电器</h3>
     </div>
-
     <div class="card">
-      <img src="images/c2c.jpg" alt="USB-C to USB-C 线">
-      <h2>USB-C to USB-C 线</h2>
-      <p>高速传输，支持充电与数据同步。</p>
+      <div class="image-box">
+        <img src="images/cable.png" alt="USB-C to USB-C 线">
+      </div>
+      <h3>USB-C to USB-C 线</h3>
     </div>
-
     <div class="card">
-      <img src="images/dock.jpg" alt="USB-C Docking">
-      <h2>USB-C Docking</h2>
-      <p>多端口扩展（HDMI、USB、网口），一线连接笔记本，提升效率。</p>
+      <div class="image-box">
+        <img src="images/docking.png" alt="USB-C Docking">
+      </div>
+      <h3>USB-C Docking</h3>
     </div>
-
     <div class="card">
-      <img src="images/securitykey.jpg" alt="USB-C Security Key">
-      <h2>USB-C Security Key</h2>
-      <p>用于双因素认证，提高账号与数据安全性。</p>
+      <div class="image-box">
+        <img src="images/securitykey.png" alt="USB-C Security Key">
+      </div>
+      <h3>USB-C Security Key</h3>
     </div>
-
     <div class="card">
-      <img src="images/usbhub.jpg" alt="USB Hub">
-      <h2>USB Hub</h2>
-      <p>将一个USB口扩展为多个接口，方便连接外设。</p>
+      <div class="image-box">
+        <img src="images/hub.png" alt="USB Hub">
+      </div>
+      <h3>USB Hub</h3>
     </div>
-
     <div class="card">
-      <img src="images/c2a.jpg" alt="USB-C to USB-A">
-      <h2>USB-C to USB-A</h2>
-      <p>用于连接传统USB设备与新型USB-C接口设备。</p>
+      <div class="image-box">
+        <img src="images/c_to_a.png" alt="USB-C to USB-A">
+      </div>
+      <h3>USB-C to USB-A</h3>
     </div>
-
     <div class="card">
-      <img src="images/a2c.jpg" alt="USB-A to USB-C">
-      <h2>USB-A to USB-C</h2>
-      <p>让常见的USB-A口支持连接USB-C设备，兼容性更强。</p>
+      <div class="image-box">
+        <img src="images/a_to_c.png" alt="USB-A to USB-C">
+      </div>
+      <h3>USB-A to USB-C</h3>
     </div>
   </div>
-
-  <footer>
-    <p>© 2025 IT 部门 | 外设展示</p>
-  </footer>
 </body>
 </html>
